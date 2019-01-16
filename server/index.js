@@ -11,9 +11,6 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded());
 
 
-app.use("/api", require("./api"));
-
-
 Student.sync().then(() => console.log("student tables created!"));
 Campus.sync().then(() => console.log("campus tables created!"));
 

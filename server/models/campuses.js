@@ -13,6 +13,7 @@ const Campus = db.define("campus", {
       allowNull: true
   },
   imageUrl: {
+      type: Sequelize.TEXT,
       defaultValue: Sequelize.UUID
   },
   address: {

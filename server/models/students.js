@@ -23,6 +23,7 @@ const Student = db.define("student", {
       allowNull: true
   },
   imageUrl: {
+    type: Sequelize.TEXT,
     defaultValue: Sequelize.UUID
   },
   gpa: {
